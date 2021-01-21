@@ -1,0 +1,480 @@
+/* Google Web font : Montserrat*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Manrope:300,400,500,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Overpass&display=swap');
+/* Font Awesome CDN 4.7*/
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* 고양이 TExt Switching */
+@import url(https://fonts.googleapis.com/css?family=Raleway:500,900);
+
+/* Reset CSS */
+* { box-sizing: border-box; }
+ul { list-style: none; padding: 0;}
+a { text-decoration: none; }
+
+
+/* Default CSS */
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: #222;
+	font-size: 15px;
+	margin: 0;
+	height: 100vh;
+	background-color: #fff; 
+}
+
+/* Entire Layout */
+.cd-section {
+	height: 100vh;
+}
+.cd-section > div {
+	height: 100%;
+	position: relative;
+}
+.content {
+	background-color: #ddd;
+	position: absolute;
+	width: calc(100% - 40px);
+	height: calc(100% - 80px);
+	left: 20px;
+	bottom: 20px;
+	overflow: hidden;
+}
+
+/* Header */
+
+header {
+	position: fixed;
+	width: 100%;
+}
+.gnb-inner {
+/*	border: 1px solid #000;*/
+	width: calc(100% - 40px);
+	margin: auto;
+	height: 60px;
+	line-height: 60px;
+}
+.logo {
+	float: left;
+}
+.gnb {
+	float: right;
+}
+.menu {
+	display: none;
+}
+.gnb a {}
+.slogan {
+	font-size: 18px;
+	font-style: italic;
+}
+
+
+
+/*************Section : first *******************/
+.first-inner{
+	width: 50%;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 70%;
+}
+.first-inner h3{
+	font-style: under-line;
+}
+.first-inner h4:hover{
+	text-decoration: underline;
+}
+
+/*************Section : about *******************/
+.about-inner{
+}
+.about-items{
+	width: 60%;
+	color: white;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: 800px;
+}
+.item {
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.item:hover h3{
+	color: #000;
+	letter-spacing: 1px;
+}
+.item:hover img{
+		filter: invert(0);
+}
+.item img {
+	height: 100px;
+	float: left;
+	margin-right: 20px;
+	filter: invert(1);
+	transition: 0.5s;
+}
+.item h3 {
+	font-size: 28px;
+	font-weight: 500;
+	margin: 0;
+	transition: 0.5s;
+	letter-spacing: -2px;
+}
+.item span {}
+.item p {
+	overflow: hidden;
+	font-size: 18px;
+}
+
+
+/*************Section : Projects *******************/
+
+.prj-inner {
+}
+.prj-feature {
+	width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.prj-feature > div {
+	height: 300px;
+	color: #bbb; /** 텍스트 컬러 **/
+}
+.prj-info{
+}
+.prj-info > div {
+	float: left; /* 가로배치 */
+}
+.prj-heading{
+	width: 70%;
+	padding-right: 20px;
+}
+.prj-heading h2{
+	color: white;
+	margin-bottom: 0;
+}
+.prj-heading p{	
+	margin-top: 0;
+	font-size: small;
+	line-height: 1.5em;
+}
+.prj-photo{
+	width: 30%;
+}
+.prj-photo img{
+	height: 270px;
+}
+.prj-photo img:hover{
+
+}
+.prj-heading hr.bar,
+.prj-history hr.bar {
+	background-color: dodgerblue;
+	display: inline-block;
+}
+.prj-history{
+}
+.prj-history h2{
+	margin-bottom: 0;
+	color: white;
+}
+.history-slider{
+}
+.history-slider h4{
+	color: white;
+	font-size: 20px;
+	font-weight: normal;
+	margin: 0;
+}
+.history-slider h4 span{
+	color: dodgerblue;
+}
+.history-slider p{
+	font-size: 16px;
+	
+}
+
+figure.snip1432 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
+  text-align: left;
+}
+figure.snip1432 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+figure.snip1432 img {
+  opacity: 0.8;
+  width: 100%;
+  vertical-align: top;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+figure.snip1432 figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+figure.snip1432 figcaption > div {
+  height: 50%;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+figure.snip1432 h2,
+figure.snip1432 h3 {
+  margin: 0;
+  position: absolute;
+  left: 0;
+  padding: 0 30px;
+  text-transform: uppercase;
+}
+figure.snip1432 h2 {
+  font-weight: 900;
+  top: 0;
+}
+figure.snip1432 h3 {
+  font-size: 1em;
+  bottom: 0;
+  font-weight: 500;
+}
+figure.snip1432 h3:nth-of-type(2) {
+  opacity: 0;
+  -webkit-transform: translateY(150%);
+  transform: translateY(150%);
+}
+figure.snip1432 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+figure.snip1432:hover img,
+figure.snip1432.hover img {
+  opacity: 0.3;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+figure.snip1432:hover figcaption h3:first-of-type,
+figure.snip1432.hover figcaption h3:first-of-type {
+  -webkit-transform: translateY(150%);
+  transform: translateY(150%);
+  opacity: 0;
+}
+figure.snip1432:hover figcaption h3:nth-of-type(2),
+figure.snip1432.hover figcaption h3:nth-of-type(2) {
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+/* Slick.js history Custom CSS */
+.history-slider .slick-arrow {
+	display: none !important;
+}
+
+.history-slider .slick-dots li button:before {
+	color: #fff;
+	font-size: 40px;
+}
+.history-slider .slick-dots li{
+	margin: 0;
+}
+/*************Section : awards winner *******************/
+
+.awards-inner {
+	height: 100%;
+	border: 1px solid #ddd;
+}
+/* > div 굉장히 중요, 밑의 두개만 div 줄거다. 두 이미지만 둘로 나눌거다라는것*/
+.awards-inner > div {
+	float: left;
+	width: 50%;
+	height: 100%;
+	position: relative;
+}
+.about-awards{
+	background-color: #1a1f24;
+	color: white;
+}
+.about-heading{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 70%;
+}
+.victory { 
+	background-color: white;
+}
+.victory img {
+	position: absolute;
+}
+.about-heading h2 {
+	margin: 0;
+}
+hr.bar{
+	width: 50px;
+	height: 4px;
+	border: none;
+	background-color: crimson;
+/*	margin: 30px auto;*/
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.about-heading p{
+	color: #999;
+	font-size: 17px;
+	line-height: 1.5em; 
+}
+
+.about-heading a {
+	
+}
+
+.view-awards{
+	color: #bbb;
+	border: 1px solid #bbb;
+	padding: 5px 15px;
+	border-radius: 20px;
+	transition: 0.5s;
+	display: inline-block;
+	margin-top: 20px;
+}
+.view-awards:hover{
+	background-color: #31c0ce;
+	color: #fff;
+	margin-top: 20px;
+	border-color: transparent;
+}
+
+/*************Section : Contact *******************/
+.content{
+	background-color: white;
+}
+
+.contact-inner {
+	height: 100%;
+}
+.contact-feature {
+	width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.contact-feature > div {
+	height: 520px;
+	float: left;
+	width: 50%;
+	padding: 20px;
+}
+.contact-form {
+	background-color: white;
+}
+.contact-form:hover {
+	background-color: lightgray;
+}
+.contact-form h3 {
+	font-size: 30px;
+	font-weight: normal;
+	margin: 0;
+}
+.send-box {}
+.send-box label {
+	display: block;
+	font-weight: bold;
+	font-size: 16px;
+	margin: 10px 0;
+	
+}
+.send-box label span {
+	color: crimson;
+	font-weight: normal;
+}
+.send-box input[type=email],
+.send-box input[type=text],
+.send-box textarea {
+	border: 1px solid #ccc;
+	padding: 10px;
+	border-radius: 3px;
+	outline: none;
+	width: 90%;
+	transition: 0.5s;
+}
+.send-box input[type=email]:hover,
+.send-box input[type=text]:hover,
+.send-box textarea:hover
+{
+	border: 1px solid #0088cc;
+	box-shadow: 0 0 5px #0088cc;
+}
+.send-box input[type=email]:focus,
+.send-box input[type=text]:focus,
+.send-box textarea:focus
+{
+	background-color: #eee;
+}
+.send-box button {
+	background-color: #0088cc;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: 0.5s;
+	margin-top: 10px;
+	width: 200px;
+}
+.send-box button:hover{
+	background-color: #000;
+}
+.send-box input {}
+.contact-info {
+	background-image: url(images/bob4.jpg);
+	background-size: 	130%;
+}
+.contact-info:hover {
+	background-image: url(images/bob4_1.jpg);
+}
+.contact-info h4{
+	font-weight: normal;
+	font-size: 20px;
+	margin: 0;
+}
+
+.contact-info ul li {
+	line-height: 2em; /* body 15px x 2 = 30px*/
+}
+
+.contact-info ul li:last-child{
+	color: #0088cc;
+}
+
+.contact-info p {
+	line-height: 1.5em;
+	color:white;
+}
+
+
