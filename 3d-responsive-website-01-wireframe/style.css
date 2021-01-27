@@ -5,6 +5,9 @@
 @import url('https://fonts.googleapis.com/css?family=Overpass&display=swap');
 /* Font Awesome CDN 4.7*/
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400&family=Shadows+Into+Light&display=swap');
 
 /* 고양이 TExt Switching */
 @import url(https://fonts.googleapis.com/css?family=Raleway:500,900);
@@ -74,20 +77,110 @@ header {
 
 
 /*************Section : first *******************/
-.first-inner{
-	width: 50%;
-	color: white;
+.first-inner {
+	background-color: #fff;
+	height: 100%;
+}
+.o-i {
+	background: url(images/fox.jpg) no-repeat center center;
+	background-size: cover;
+	height: 100%;
+	animation: opacity-image 1s 2.5s ease-in both;
+}
+.home-heading{
 	position: absolute;
 	top: 50%;
-	left: 70%;
+	left: 67%;
+	margin-left: 0;
+	transform: translate(-50%, -50%);
+	font-family: 'Gaegu', cursive;
+	animation: opacity-image 1s 3s ease-in both;
 }
-.first-inner h3{
-	font-style: under-line;
+.home-heading span {
+	display: block;
+	font-size: 38px;
+	color:floralwhite;
+	font-weight: 500;
 }
-.first-inner h4:hover{
-	text-decoration: underline;
+.first-inner:before{
+	content: '';
+	background-color: #000;
+	position: absolute;
+	color: black;
+	width: 10px;
+	height: 100%;
+	top: 0;
+	left: 0;
+	animation: overlay 1s 2s ease-in-out both;
+/*	2초 딜레이, 1초 동안 실행됨 */
+}
+.welcome-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 50px;
+	font-weight: normal;
+	text-align: center;
+	line-height: 1.2em;
+	color: black;
+	margin: 0;
+	font-family: 'Shadows Into Light', cursive;
+  animation: slideup 2s linear; 
+/*	2초 동안 실행됨 */
+	animation-fill-mode: both;
+}
+.welcome-text span{
+	display: block;
+	font-size: 26px;
+	color:darkgray;
+}
+.welcome-text i{
+	color: crimson;
 }
 
+@keyframes slideup {
+	0% {
+		opacity: 0;
+		margin-top: 50px;
+	}
+	20% {
+		opacity: 1;
+		margin-top: 0;
+	}
+	80% {
+		opacity: 1;
+		margin-top: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes overlay {
+	0% {
+		width: 0;
+		left: 0;
+	}
+	50% {
+		width: 100%;
+		left: 0;
+	}
+	100% {
+		width: 0;
+/*		right: 0; 갑자기 left 100하지않고 right 0하게되면 X */
+		left: 100%;
+	}
+}
+
+@keyframes opacity-image {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 /*************Section : about *******************/
 .about-inner{
 }
@@ -165,14 +258,15 @@ header {
 	line-height: 1.5em;
 }
 .prj-photo{
+	margin-top: 60px;
+	height: 100%;
 	width: 30%;
+	display: block;
 }
 .prj-photo img{
 	height: 270px;
 }
-.prj-photo img:hover{
 
-}
 .prj-heading hr.bar,
 .prj-history hr.bar {
 	background-color: dodgerblue;
@@ -347,9 +441,7 @@ hr.bar{
 	font-size: 17px;
 	line-height: 1.5em; 
 }
-
-.about-heading a {
-	
+.about-heading a {	
 }
 
 .view-awards{
@@ -367,6 +459,69 @@ hr.bar{
 	margin-top: 20px;
 	border-color: transparent;
 }
+/*************Section : category *******************/
+.category-inner {
+	height: 100%;
+	border: 1px solid #ddd;
+}
+.category-inner > div {
+	float: left;
+	width: 50%;
+	height: 100%;
+	position: relative;
+}
+.about-category{
+	background-color: cadetblue;
+}
+.about-cate{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 70%;
+}
+.about-cate button{
+	width: 40px;
+	height: 20px;
+}
+.about-cate a{
+	color: azure;
+}
+.about-cate p a:hover{
+	color: brown;
+}
+hr.bar2{
+	width: 50px;
+	height: 4px;
+	border: none;
+	background-color: beige;
+	margin-top: 20px;
+	margin-bottom: 20px;	
+}
+.gory{
+	background-color: #1a1f24;
+}
+.gory h3{
+	color: aliceblue;
+}
+
+.view-awards2{
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 5px 15px;
+	border-radius: 20px;
+	transition: 0.5s;
+	display: inline-block;
+	margin-top: 20px;
+}
+.view-awards2:hover{
+	background-color: coral;
+	color: floralwhite;
+	margin-top: 20px;
+	border-color: transparent;
+}
+
 
 /*************Section : Contact *******************/
 .content{
@@ -392,9 +547,7 @@ hr.bar{
 .contact-form {
 	background-color: white;
 }
-.contact-form:hover {
-	background-color: lightgray;
-}
+
 .contact-form h3 {
 	font-size: 30px;
 	font-weight: normal;
@@ -476,5 +629,24 @@ hr.bar{
 	line-height: 1.5em;
 	color:white;
 }
+
+/************ More info Button ***********/
+.btn-click {
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
+	font-size: 12px;
+	color: #fff;
+	background-color: #000;
+	padding: 10px 20px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.63);
+}
+.btn-click i {
+	font-size: 14px;
+}
+
+
+
 
 
